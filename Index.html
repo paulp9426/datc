@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Demo Google Login</title>
+    <link href="Content/Site.css" rel="stylesheet" />
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="btn btn-default" id="connectButton" href="#">Conectează</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="panel panel-success" id="panel">
+        <div class="panel-heading">Message</div>
+        <div class="panel-body" id="message"></div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">Authorization result</div>
+        <div class="panel-body" id="authResult"></div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">Token</div>
+        <div class="panel-body" id="token"></div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="Scripts/auth.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=loadAuth"></script>
+</body>
+</html>
