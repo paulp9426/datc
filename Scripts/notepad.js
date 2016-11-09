@@ -81,8 +81,11 @@ var folderID = "";
         
         for (i = 0; i < result.length; i++) {
             console.log(result[i].title);
+             var fileName = $("#fileName");
+             var fileContent = $("#fileContent");
             if(result[i].title == folderName.val()){
                 alert("Folderul deja extsia");
+                createTextFile(fileName.val(), fileContent.val());
                 return;
         }
     }
